@@ -2,19 +2,17 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import './main.css';
-import App from './App';
+// import App from './App';
 import * as serviceWorker from './serviceWorker';
-
-ReactDOM.render(<App />, document.getElementById('root'));
-
-
+import { AboutPage } from './AboutPage';
+import { ResumePage } from './ResumePage';
 
 // Each projects description should include:
 // Description, technologies used, a deployment link button, a source link button
 class ProjectDescription extends React.Component {
   render() {
     return (
-      <div class="project-desc">
+      <div className="project-desc">
         <h1> Project Description here</h1>
         <h2>Technologies used</h2>
         <a> view source</a>
@@ -27,7 +25,7 @@ class ProjectDescription extends React.Component {
 class ProjectCard extends React.Component {
   render() {
     return (
-      <div class="project-card">
+      <div className="project-card">
         <img src="#" alt="Project screenshot will go here" />
         <ProjectDescription />
       </div>
@@ -39,7 +37,6 @@ class Base extends React.Component {
   render() {
     return (
       <div id="base">
-        <h1>This is a test</h1>
         <h1 id="the-css-test">Checking that CSS works</h1>
         <ProjectCard />
         <ProjectCard />
@@ -50,7 +47,21 @@ class Base extends React.Component {
   }
 }
 
-ReactDOM.render(<Base />, document.getElementById('root'));
+class PageContainer extends React.Component {
+  render() {
+    return (
+      <div>
+        <Base />
+        <AboutPage />
+        <ResumePage />
+
+      </div>
+    );
+
+  }
+}
+ReactDOM.render(<PageContainer />, document.getElementById('root'));
+// ReactDOM.render(<Base />, document.getElementById('root'));
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
 // Learn more about service workers: http://bit.ly/CRA-PWA

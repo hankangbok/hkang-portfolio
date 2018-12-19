@@ -1,26 +1,59 @@
+body,
+html {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+h2 {
+  display: inline;
+}
+
+ul li{
+  display:inline;
+}
+header {
+  width: 100%;
+}
+.header-large {
+  /* display:inline; */
+  background: rgb(239,30,12);
+}
+.header-minimized {
+  background: rgba(221, 52, 0, 0.6);
+}
+
+footer {
+  position: fixed;
+  bottom:0;
+  padding: 0.5em;
+  background: rgba(248,131,121,0.6);
+  width:100%;
+}
+
 #the-css-test {
   border: 5px solid red;
-  font-size:4em;
+  font-size: 4em;
 }
-/* 
+
 #flex-container {
   display:flex;
   flex-direction: column;
-  /* justify-content: center; */
-  /*flex-wrap:wrap;
-  align-items: center;*/
-#base {
-  display:flex;
-  flex-direction: column;
+  justify-content: center; 
   flex-wrap:wrap;
   align-items: center;
 }
-
-div {
-  border: 5px black solid;
+#base {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  text-align: center;
 }
+
+
 .project-card {
   border: 2px blue solid;
   padding: 2em;
   width: 30%;
+  margin: 10px;
 }

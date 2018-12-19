@@ -15,36 +15,38 @@ class ProjectDescription extends React.Component {
   render() {
     return (
       <div class="project-desc">
-      <h1> Project Description here</h1>
-      <h2>Technologies used</h2>
-      <a> view source</a>
-      <a> view deployment</a>
-    </div>
+        <h1> Project Description here</h1>
+        <h2>Technologies used</h2>
+        <a> view source</a>
+        <a> view deployment</a>
+      </div>
     );
   }
 }
 // // This is the container for the 'card' that will display each project in my list
 class ProjectCard extends React.Component {
   render() {
-    return(
+    return (
       <div class="project-card">
-        <img src="#" alt="Project screenshot will go here"/>
+        <img src="#" alt="Project screenshot will go here" />
         <ProjectDescription />
       </div>
     );
-  } 
+  }
 }
 
 class Base extends React.Component {
   render() {
     return (
-        <div id="base">
-          <h1>This is a test</h1>
-          <h1 id="the-css-test">Checking that CSS works</h1>
-          <ProjectCard />
-          <ProjectCard />
-        </div>
-      );
+      <div id="base">
+        <h1>This is a test</h1>
+        <h1 id="the-css-test">Checking that CSS works</h1>
+        <ProjectCard />
+        <ProjectCard />
+        <ProjectCard />
+        <ProjectCard />
+      </div>
+    );
   }
 }
 

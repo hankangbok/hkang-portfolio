@@ -2,7 +2,25 @@
   border: 5px solid red;
   font-size:4em;
 }
+/* 
+#flex-container {
+  display:flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  /*flex-wrap:wrap;
+  align-items: center;*/
+#base {
+  display:flex;
+  flex-direction: column;
+  flex-wrap:wrap;
+  align-items: center;
+}
 
 div {
   border: 5px black solid;
+}
+.project-card {
+  border: 2px blue solid;
+  padding: 2em;
+  width: 30%;
 }

@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/hkang-portfolio/precache-manifest.84981f97662cacea5f6c42ded77ee95d.js"
+  "/hkang-portfolio/precache-manifest.cfac49b48602fa70fe42d435a1daa456.js"
 );
 
 workbox.clientsClaim();

@@ -13,18 +13,23 @@ class ProjectDescription extends React.Component {
   constructor(props) {
     super(props);
     this.state = myProjects[this.props.name];
+    
   }
   getName() {
     return this.state.name;
   }
   render() {
+    let name=this.state.name;
+    let techUsed=this.state.techUsed;
+    let source = this.state.source;
+    let deployment=this.state.deployment;
     return (
       <div className="project-desc">
-        <h1>{this.getName()}</h1>
+        <h1>{name}</h1>
         <h1> Project Description here</h1>
-        <h2>Technologies used:{this.state.techUsed} </h2>
-        <a> view source</a>
-        <a> view deployment</a>
+        <h2>Technologies used:{techUsed} </h2>
+        <a href={source}> view source</a>
+        <a href={deployment}> view deployment</a>
       </div>
     );
   }
@@ -55,6 +60,7 @@ class Base extends React.Component {
         <ProjectCard name="library"/>
         <ProjectCard name="weatherapp"/>
         <ProjectCard name="formvalidation" />
+        <ProjectCard name="restaurantpage" />
       </div>
     );
   }
@@ -73,24 +79,29 @@ class PageContainer extends React.Component {
 
   }
 }
-
+// Eventually, make urls standardized so that you dont need to look up a repos URL
+//Project/repo names should be standardized more
 let myProjects = {
   "univiewdatabase":{name:"Uniview DataBase", 
     techUsed:"HTML, CSS, Javascript Highlight API, FlexBox(CSS), DataTables(JQuery Plugin)", 
-    source:"", 
-    deployment:""},
+    source:"https://github.com/kyouyatamax/UVDatabase", 
+    deployment:"https://kyouyatamax.github.io/UVDatabase/"},
   "library":{name:"Personal Library", 
     techUsed:"HTML, CSS, Javascript Highlight API, FlexBox(CSS), DataTables(JQuery Plugin)", 
-    source:"", 
-    deployment:""},  
+    source:"https://github.com/kyouyatamax/jsLibraryOdinProject", 
+    deployment:"https://kyouyatamax.github.io/UVDatabase/"},  
   "formvalidation":{name:"Form Validation Practice", 
     techUsed:"HTML, CSS, Javascript Highlight API, FlexBox(CSS), DataTables(JQuery Plugin)", 
-    source:"", 
-    deployment:""},
+    source:"https://github.com/kyouyatamax/formValidationPractice", 
+    deployment:"https://kyouyatamax.github.io/formValidationPractice/"},
   "weatherapp":{name:"Weather App (API)", 
     techUsed:"HTML, CSS, Javascript Highlight API, FlexBox(CSS), DataTables(JQuery Plugin)", 
-    source:"", 
-    deployment:""}
+    source:"https://github.com/kyouyatamax/weather-app-hkang", 
+    deployment:"https://kyouyatamax.github.io/weather-app-hkang/"},
+  "restaurantpage":{name:"Restaurant Page", 
+    techUsed:"HTML, CSS, Javascript Highlight API, FlexBox(CSS), DataTables(JQuery Plugin)", 
+    source:"https://github.com/kyouyatamax/restaurantpageJS", 
+    deployment:"https://kyouyatamax.github.io/restaurantpageJS/"}
 };
 ReactDOM.render(<PageContainer />, document.getElementById('root'));
 // ReactDOM.render(<Base />, document.getElementById('root'));

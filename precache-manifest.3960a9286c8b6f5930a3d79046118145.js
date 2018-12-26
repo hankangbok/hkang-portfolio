@@ -4,19 +4,19 @@ self.__precacheManifest = [
     "url": "/hkang-portfolio/static/js/runtime~main.60a4c68b.js"
   },
   {
-    "revision": "8207692ca9e1fc1c54fb",
-    "url": "/hkang-portfolio/static/js/main.8207692c.chunk.js"
+    "revision": "c7933a900761611a15d2",
+    "url": "/hkang-portfolio/static/js/main.c7933a90.chunk.js"
   },
   {
     "revision": "4d4949a9a9f903a5cc4a",
     "url": "/hkang-portfolio/static/js/1.4d4949a9.chunk.js"
   },
   {
-    "revision": "8207692ca9e1fc1c54fb",
-    "url": "/hkang-portfolio/static/css/main.f5a10278.chunk.css"
+    "revision": "c7933a900761611a15d2",
+    "url": "/hkang-portfolio/static/css/main.8a6ea6cd.chunk.css"
   },
   {
-    "revision": "bd2356c1f8edb8dbee9c78b045e5ae12",
+    "revision": "5be6d13be28d72cab9af280dd161efb6",
     "url": "/hkang-portfolio/index.html"
   }
 ];

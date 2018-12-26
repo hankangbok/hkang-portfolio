@@ -4,20 +4,27 @@ html {
   margin: 0;
   padding: 0;
 }
-h2 {
-  display: inline;
+a:visited{
+  color:rgb(0, 0, 128);
 }
-/* 
-ul, li{
-  display:inline;
-} */
+ 
 header {
   width: 100%;
 }
-
-ul,li {
+.nav-list li{
   list-style:none;
+  display:inline;
 }
+/* give the source/deployment links cute shapes */
+.project-desc a {
+  padding: 10px;
+  background: rgb(252, 168, 161);
+  border-radius: 5px;
+  margin: 2px;
+  color:navy;
+  text-decoration: none;
+}
+
 #headshot {
   height: 200px;
   width:200px; 
@@ -25,11 +32,13 @@ ul,li {
 }
 .header-large {
   /* display:inline; */
-  background: rgb(239,30,12);
+  background: rgb(252, 168, 161);
+  padding-bottom: 5px;
   height:14;
 }
 .header-minimized {
-  background: rgba(221, 52, 0, 0.6);
+  visibility:hidden;
+  background: rgb(252, 168, 161);
   height:1em;
 }
 #header-nav {
@@ -37,18 +46,18 @@ ul,li {
   list-style: none;
 }
 #header-nav h1{
-  font-size: 4em;
+  font-size: 3em;
 }
 #header-nav a {
   text-decoration: none;
-  font-size: 3em;
+  font-size: 2em;
 }
 
 footer {
   position: fixed;
   bottom:0;
   padding: 0.5em;
-  background: rgba(248,131,121,0.6);
+  background: rgba(248,131,121,0.1);
   width:100%;
 }
 
@@ -77,10 +86,12 @@ footer {
 }
 
 .project-card {
-  border: 2px blue solid;
-  padding: 3em;
+  /* border: 2px blue solid; */
+  border-radius:25px;
+  box-shadow: 0px 0px 15px rgb(128, 128, 128);
+  padding: 5em;
   width: 30%;
-  margin: 10px;
+  margin: 2%;
 }
 footer ul {
   display:inline;

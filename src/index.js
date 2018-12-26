@@ -6,6 +6,7 @@ import './main.css';
 import * as serviceWorker from './serviceWorker';
 import { AboutPage } from './AboutPage';
 import { ResumePage } from './ResumePage';
+import { Contact } from './ContactPage';
 
 // Each projects description should include:
 // Description, technologies used, a deployment link button, a source link button
@@ -73,7 +74,7 @@ class PageContainer extends React.Component {
         <Base />
         <AboutPage />
         <ResumePage />
-
+        <Contact />
       </div>
     );
 

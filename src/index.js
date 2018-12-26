@@ -23,6 +23,7 @@ class ProjectDescription extends React.Component {
 }
 // // This is the container for the 'card' that will display each project in my list
 class ProjectCard extends React.Component {
+  
   render() {
     return (
       <div className="project-card">
@@ -37,8 +38,9 @@ class Base extends React.Component {
   render() {
     return (
       <div id="base">
-        <h1 id="the-css-test">Checking that CSS works</h1>
-        <ProjectCard />
+        <h1 id='section-title'>Projects</h1>
+        <h2>Here are some projects I have worked on.</h2>
+        <ProjectCard value={"name":"UV Database"}>
         <ProjectCard />
         <ProjectCard />
         <ProjectCard />

@@ -6,29 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="theme-color" content="#000000">
     <link rel="text/css" href="../../src/main.css">
-    <!--
-      manifest.json provides metadata used when your web app is added to the
-      homescreen on Android. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
 
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
     <title>React App</title>
   </head>
   <body>
     <div id="flex-container"> 
       <header>
         <div class="header-large">
-          <img src="calmbOK.png" id="headshot" /> <br>
-          <ul>
-            <li>Hannah Kang</li>
+          <img src="calmbOK.png" id="headshot" /> 
+          <ul id="header-nav">
+            <li><h1>Hannah Kang</h1></li>
             <li><a href="#">Projects</a></li>
             <li><a href="#">About</a></li>
             <li><a href="#">Resume</a></li>
@@ -48,13 +36,22 @@
       <div>
         <p>Thank you for checking out my page!</p>
         <p>If you'd like to get in touch, please contact me via:</p>
-        <ul>
-          <li>Github</li>
-          <li>Email</li>
-          <li>LinkedIn</li>
-        </ul>>
+        <h1 id=#todo>My resume is available at <a href="https://drive.google.com/file/d/1MS2WASHiX0ZkqGm_-21dhjG7xRGw_r1z/view?usp=sharing">on Google Drive</a></h1>
+        <h2 id=#todod>Embed the pdf into the page when the user selects</h2> 
       </div>
-      <footer>This is where the Footer will go</footer>
+      <section id="contactinfo">
+        <h1>Let's talk!</h1>
+        <h2>Email</h2>
+        <h2>Github</h2>
+        <h2>LinkedIn</h2>
+      </section>
+      <footer>
+        <ul>
+          <li>Email</li>
+          <li>Github</li>
+          <li>LinkedIn</li>
+        </ul>
+      </footer>
     </div>
 
   </body>

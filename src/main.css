@@ -7,10 +7,10 @@ html {
 h2 {
   display: inline;
 }
-
+/* 
 ul, li{
   display:inline;
-}
+} */
 header {
   width: 100%;
 }
@@ -29,6 +29,17 @@ header {
   background: rgba(221, 52, 0, 0.6);
   height:1em;
 }
+#header-nav {
+  text-decoration: none;
+  list-style: none;
+}
+#header-nav h1{
+  font-size: 4em;
+}
+#header-nav a {
+  text-decoration: none;
+  font-size: 3em;
+}
 
 footer {
   position: fixed;
@@ -36,11 +47,6 @@ footer {
   padding: 0.5em;
   background: rgba(248,131,121,0.6);
   width:100%;
-}
-
-#the-css-test {
-  border: 5px solid red;
-  font-size: 4em;
 }
 
 #flex-container {
@@ -62,10 +68,21 @@ footer {
 .container {
   border: 2px red solid;
 }
+#base #section-title{
+  font-size: 4em;
+}
 
 .project-card {
   border: 2px blue solid;
   padding: 2em;
   width: 30%;
   margin: 10px;
+}
+footer ul {
+  display:inline;
+  list-style:none;
+}
+
+#todo {
+  border: 5px yellow solid;
 }

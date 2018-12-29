@@ -4,11 +4,16 @@ html {
   margin: 0;
   padding: 0;
 }
+
 a:visited{
   color:rgb(0, 0, 128);
 }
+
+#root {
+  margin-bottom: 4em;
+}
  
-#title {
+#title,h3 {
   font-weight:normal;
 }
 header {
@@ -38,7 +43,7 @@ header {
   width:225px; 
 }
 .header-large {
-  /* display:inline; */
+  padding-bottom: 50px;
   background: rgb(255, 185, 178);
   background: 
     radial-gradient(
@@ -46,8 +51,8 @@ header {
       #ffe7e5,
       #fcb1aa 45%
     );
-  padding-bottom: 50px;
-  color:rgb(51, 51, 56);
+
+  color:rgb(65, 65, 70);
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%);
 
 }
@@ -68,13 +73,8 @@ header {
   text-decoration: none;
   font-size: 2em;
 }
-
-footer {
-  position: fixed;
-  bottom:0;
-  padding: 0.5em;
-  background: #ffddd9;
-  width:100%;
+#root h1{
+  font-weight:normal;
 }
 
 #flex-container {
@@ -85,7 +85,7 @@ footer {
   align-items: center;
   text-align: center;
 }
-#base {
+#base, #contents {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -93,12 +93,17 @@ footer {
   text-align: center;
 }
 
-.container {
-  border: 2px red solid;
+.subpages-container {
+  width: 50%;
+  padding: 2em;
+  /* border-top: 2px gray solid; */
 }
-
+.subpages-container-border-gradient {
+  background: linear-gradient(90deg, white,gray, white);
+  height:2px;
+}
 .section-title{
-  font-size: 4em;
+  font-size: 3em;
 }
 
 .project-card {
@@ -112,4 +117,24 @@ footer {
 footer ul {
   display:inline;
   list-style:none;
+}
+footer li{
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+footer {
+  position: fixed;
+  bottom:0;
+  padding: 0.5em;
+  background: rgba(255,221,217,0.8);
+  width:100%;
+}
+/* About Me */
+.personal-summary li{
+  list-style:none;
+  
+}
+.skills-list {
+  text-align:left;
 }

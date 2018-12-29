@@ -5,8 +5,9 @@ import "./main.css";
 // import App from './App';
 import * as serviceWorker from "./serviceWorker";
 import { AboutPage } from "./AboutPage";
+import {ContactPage} from "./ContactPage";
 import { ResumePage } from "./ResumePage";
-import { ContactPage } from "./ContactPage";
+
 
 // TODO: Find a React way to wipe the page and render components when the header
 // Nav buttons are clicked
@@ -41,7 +42,7 @@ class ProjectDescription extends React.Component {
       <div className="project-desc">
         <h1>{name}</h1>
         <p>{description}</p>
-        <p>Technologies used: {techUsed} </p>
+        <p><b>Technologies used: <br /></b> {techUsed} </p>
         <a href={source}> view source</a>
         <a href={deployment}> view deployment</a>
       </div>
@@ -68,7 +69,6 @@ class Base extends React.Component {
     return (
       <div id="base">
         <h1 className="section-title">Projects</h1>
-        <h2>Here are some projects I have worked on.</h2>
         <ProjectCard name="univiewdatabase" />
         <ProjectCard name="library" />
         <ProjectCard name="weatherapp" />
@@ -86,9 +86,9 @@ class PageContainer extends React.Component {
     return (
       <div id="contents">
         <Base />
-        {/* <AboutPage />
+        <AboutPage />
         <ResumePage />
-        <Contact /> */}
+        <ContactPage />
       </div>
     );
   }
@@ -101,7 +101,7 @@ let myProjects = {
     description:
       "Uniview Database is a searchable catalog of digital assets used by the Morrison Planetarium. It scans a users local installation of Uniview 2.0 software using Python, and produces an HTML webpage. Uniview Database expedites and improves planetarium show development. It can be easily implemented by other Uniview 2.0 (Planetarium software) users. ",
     techUsed:
-      "HTML, CSS, Javascript Highlight API, FlexBox(CSS), DataTables(JQuery Plugin)",
+      "ReactJS (JavaScript), DataTables (jQuery Plugin), mark.js (JavaScript)  |  Beautiful Soup (Python HTML Parser), unittest (Python) | FlexBox(CSS)",
     source: "https://github.com/kyouyatamax/UVDatabase",
     deployment: "https://kyouyatamax.github.io/UVDatabase/"
   },
@@ -110,7 +110,7 @@ let myProjects = {
     description:
       "I tried building this library in React as well as in pure Javascript. In both cases, users can see a library of books with their titles, author names, # of pages, etc. Users can add new books using the Javascript form, check off books as they’re read, and remove books from their library. ",
     techUsed:
-      "HTML, CSS, Javascript Highlight API, FlexBox(CSS), DataTables(JQuery Plugin)",
+      "ReactJS (JavaScript), FlexBox(CSS), Javascript ES6",
     source: "https://github.com/kyouyatamax/jsLibraryOdinProject",
     deployment: "https://kyouyatamax.github.io/UVDatabase/"
   },
@@ -118,7 +118,7 @@ let myProjects = {
     name: "Form Validation Practice",
     description: "",
     techUsed:
-      "HTML, CSS, Javascript Highlight API, FlexBox(CSS), DataTables(JQuery Plugin)",
+      "HTML, CSS, Javascript",
     source: "https://github.com/kyouyatamax/formValidationPractice",
     deployment: "https://kyouyatamax.github.io/formValidationPractice/"
   },
@@ -127,7 +127,7 @@ let myProjects = {
     description:
       "This webpage uses the Weather API to find out the weather in a users city of choice. In addition, whimsical animated GIFs matching the weather result are displayed using the GIPHY API. Whether you subscribe to the ‘Jiff’ or ‘Gif’ pronunciation, this page can help you check the weather in a GIF. ",
     techUsed:
-      "HTML, CSS, Javascript Highlight API, FlexBox(CSS), DataTables(JQuery Plugin)",
+      "Weather API (JavaScript), GIPHY API (JavaScript), ReactJS (JavaScript),  HTML, CSS, Javascript Highlight API, FlexBox(CSS), DataTables(JQuery Plugin)",
     source: "https://github.com/kyouyatamax/weather-app-hkang",
     deployment: "https://kyouyatamax.github.io/weather-app-hkang/"
   },
@@ -136,7 +136,7 @@ let myProjects = {
     description:
       "You're looking at it! My personal website uses React, Flexbox, and the source code is at the link below.",
     techUsed:
-      "HTML, CSS, Javascript Highlight API, FlexBox(CSS), DataTables(JQuery Plugin)",
+      "ReactJS (JavaScript), FlexBox(CSS),  HTML, CSS",
     source: "https://github.com/kyouyatamax/restaurantpageJS",
     deployment: "https://kyouyatamax.github.io/restaurantpageJS/"
   },
@@ -144,7 +144,7 @@ let myProjects = {
     name: "Restaurant Page",
     description: "",
     techUsed:
-      "HTML, CSS, Javascript Highlight API, FlexBox(CSS), DataTables(JQuery Plugin)",
+      "HTML, CSS, JavaScript",
     source: "https://github.com/kyouyatamax/restaurantpageJS",
     deployment: "https://kyouyatamax.github.io/restaurantpageJS/"
   },
@@ -153,7 +153,7 @@ let myProjects = {
     description:
       "The Planck Display was a touch-screen exhibit at the Santa Barbara Museum of Natural History (SBMNH). I built in updates (HTML, CSS, JS) to reflect new research data, improve content clarity and accessibility, and add multimedia assets (video, images, slideshows).",
     techUsed:
-      "HTML, CSS, Javascript Highlight API, FlexBox(CSS), DataTables(JQuery Plugin)",
+      "KRPano (Panoramic Image Viewer for HTML), Python, HTML, CSS",
     source: "https://github.com/kyouyatamax/restaurantpageJS",
     deployment: "https://kyouyatamax.github.io/restaurantpageJS/"
   }

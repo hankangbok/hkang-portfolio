@@ -1,21 +1,33 @@
-import React from 'react';
+import React from "react";
 
 export class ContactPage extends React.Component {
   render() {
     return (
-    <div className="container">
-      <h1 className='section-title'>Contact</h1>
-      <div>
+      <div className="subpages-container">
+        <div className="subpages-container-border-gradient"></div>
+        <h1 className="section-title">Want to Get in Contact?</h1>
+        <div>
+        </div>
+        <section id="contactinfo">
+          <h3>
+            Email:{" "}
+            <a href="mailto: hankang.bok@gmail.com">hankang.bok@gmail.com</a>
+          </h3>
+          <h3>
+            Github:{" "}
+            <a href="https://github.com/kyouyatamax">
+              https://github.com/kyouyatamax
+            </a>{" "}
+          </h3>
+          <h3>
+            LinkedIn:{" "}
+            <a href="https://www.linkedin.com/in/hankangbokbok/">
+              https://www.linkedin.com/in/hankangbokbok/
+            </a>
+          </h3>
+        </section>
         <p>Thank you for checking out my page!</p>
-        <p>If you'd like to get in touch, please contact me via:</p>
       </div>
-      <section id="contactinfo">
-        <h1>Let's talk!</h1>
-        <h2>Email</h2>
-        <h2>Github</h2>
-        <h2>LinkedIn</h2>
-      </section>
-    </div>
     );
   }
 }

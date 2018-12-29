@@ -6,8 +6,8 @@ export class AboutPage extends React.Component {
       
       <div className="subpages-container">
         <div className="subpages-container-border-gradient"></div>
-        <h1 className="section-title">Who Am I?</h1>   
-        <h2>What do I do?</h2>
+        <h1 className="section-title">About Me</h1>   
+        <h1>What do I do?</h1>
         <div className="personal-summary">  
           <ul>
             <li>
@@ -29,7 +29,7 @@ export class AboutPage extends React.Component {
             <li>Dance and keep learning in my spare time</li>
           </ul>
         </div>
-        <h2>What Do I Know?</h2>
+        <h1>What Do I Know?</h1>
           <div className = "skills-list">
           <ul>
             <li>Languages: Javascript, Python, HTML, CSS</li>

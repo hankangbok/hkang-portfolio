@@ -36,15 +36,25 @@ class ProjectDescription extends React.Component {
     let name = this.state.name;
     let description = this.state.description;
     let techUsed = this.state.techUsed;
-    let source = this.state.source;
-    let deployment = this.state.deployment;
+    let source = this.state.source || undefined;
+    let deployment = this.state.deployment || undefined;
+    let sourceButton;
+    let deploymentButton;
+    if (source) {
+      sourceButton = <a href={source}> view source</a>;
+      deploymentButton = <a href={deployment}> view deployment</a>
+    } else {
+      sourceButton = <p>This was a proprietary software project. I'm sorry, I can't upload the code.</p>;
+      deploymentButton=<p></p>
+    }
+  
     return (
       <div className="project-desc">
         <h1>{name}</h1>
         <p>{description}</p>
         <p><b>Technologies used: <br /></b> {techUsed} </p>
-        <a href={source}> view source</a>
-        <a href={deployment}> view deployment</a>
+        {sourceButton}
+        {deploymentButton}
       </div>
     );
   }
@@ -68,7 +78,7 @@ class Base extends React.Component {
   render() {
     return (
       <div id="base">
-        <h1 className="section-title">Projects</h1>
+        <h1 className="section-title">What Projects Have I Built?</h1>
         <ProjectCard name="univiewdatabase" />
         <ProjectCard name="library" />
         <ProjectCard name="weatherapp" />
@@ -85,8 +95,8 @@ class PageContainer extends React.Component {
   render() {
     return (
       <div id="contents">
-        <Base />
         <AboutPage />
+        <Base />
         <ResumePage />
         <ContactPage />
       </div>
@@ -112,7 +122,7 @@ let myProjects = {
     techUsed:
       "ReactJS (JavaScript), FlexBox(CSS), Javascript ES6",
     source: "https://github.com/kyouyatamax/jsLibraryOdinProject",
-    deployment: "https://kyouyatamax.github.io/UVDatabase/"
+    deployment: "https://kyouyatamax.github.io/bookLibraryReact/"
   },
   formvalidation: {
     name: "Form Validation Practice",
@@ -137,8 +147,8 @@ let myProjects = {
       "You're looking at it! My personal website uses React, Flexbox, and the source code is at the link below.",
     techUsed:
       "ReactJS (JavaScript), FlexBox(CSS),  HTML, CSS",
-    source: "https://github.com/kyouyatamax/restaurantpageJS",
-    deployment: "https://kyouyatamax.github.io/restaurantpageJS/"
+    source: "https://github.com/kyouyatamax/hkang-portfolio",
+    deployment: "https://kyouyatamax.github.io/hkang-portfolio/"
   },
   restaurantpage: {
     name: "Restaurant Page",
@@ -154,8 +164,6 @@ let myProjects = {
       "The Planck Display was a touch-screen exhibit at the Santa Barbara Museum of Natural History (SBMNH). I built in updates (HTML, CSS, JS) to reflect new research data, improve content clarity and accessibility, and add multimedia assets (video, images, slideshows).",
     techUsed:
       "KRPano (Panoramic Image Viewer for HTML), Python, HTML, CSS",
-    source: "https://github.com/kyouyatamax/restaurantpageJS",
-    deployment: "https://kyouyatamax.github.io/restaurantpageJS/"
   }
 };
 ReactDOM.render(<PageContainer />, document.getElementById("root"));

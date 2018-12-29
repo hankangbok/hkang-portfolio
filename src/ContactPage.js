@@ -3,11 +3,10 @@ import React from "react";
 export class ContactPage extends React.Component {
   render() {
     return (
-      <div className="subpages-container">
-        <div className="subpages-container-border-gradient"></div>
+      <div id="contactpage" className="subpages-container">
+        <div className="subpages-container-border-gradient" />
         <h1 className="section-title">Want to Get in Contact?</h1>
-        <div>
-        </div>
+        <div />
         <section id="contactinfo">
           <h3>
             Email:{" "}

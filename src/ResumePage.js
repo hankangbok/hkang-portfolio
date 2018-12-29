@@ -3,7 +3,7 @@ import React from "react";
 export class ResumePage extends React.Component {
   render() {
     return (
-      <div className="subpages-container">
+      <div id="resumepage" className="subpages-container">
         <div className="subpages-container-border-gradient" />
         <h1 className="section-title">Do I have a PDF Resume?</h1>
         <h3>

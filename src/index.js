@@ -5,9 +5,8 @@ import "./main.css";
 // import App from './App';
 import * as serviceWorker from "./serviceWorker";
 import { AboutPage } from "./AboutPage";
-import {ContactPage} from "./ContactPage";
+import { ContactPage } from "./ContactPage";
 import { ResumePage } from "./ResumePage";
-
 
 // TODO: Find a React way to wipe the page and render components when the header
 // Nav buttons are clicked
@@ -33,26 +32,45 @@ class ProjectDescription extends React.Component {
     return this.state.name;
   }
   render() {
+    let screenshot = this.state.screenshot;
     let name = this.state.name;
     let description = this.state.description;
     let techUsed = this.state.techUsed;
     let source = this.state.source || undefined;
     let deployment = this.state.deployment || undefined;
+    let screenshotLink;
     let sourceButton;
     let deploymentButton;
     if (source) {
       sourceButton = <a href={source}> view source</a>;
-      deploymentButton = <a href={deployment}> view deployment</a>
+      deploymentButton = <a href={deployment}> view deployment</a>;
     } else {
-      sourceButton = <p>This was a proprietary software project. I'm sorry, I can't upload the code.</p>;
-      deploymentButton=<p></p>
+      sourceButton = (
+        <p>
+          This was a proprietary software project. I'm sorry, I can't upload the
+          code.
+        </p>
+      );
+      deploymentButton = <p />;
     }
-  
+    if (screenshot) {
+      screenshotLink = (
+        <img src={screenshot} alt="Project screenshot will go here" />
+      );
+    } else {
+      screenshotLink = <p />;
+    }
+
     return (
       <div className="project-desc">
+        {screenshotLink}
         <h1>{name}</h1>
         <p>{description}</p>
-        <p><b>Technologies used: <br /></b> {techUsed} </p>
+        <p>
+          <b>Technologies used: </b>
+          <br /> {techUsed}{" "}
+        </p>
+        <br />
         {sourceButton}
         {deploymentButton}
       </div>
@@ -67,7 +85,7 @@ class ProjectCard extends React.Component {
     // console.log(reference.name+"CHECK");
     return (
       <div className="project-card">
-        <img src="#" alt="Project screenshot will go here" />
+        {/* <img src="#" alt="Project screenshot will go here" /> */}
         <ProjectDescription name={this.props.name} />
       </div>
     );
@@ -78,6 +96,7 @@ class Base extends React.Component {
   render() {
     return (
       <div id="base">
+        <div className="subpages-container-border-gradient" />
         <h1 className="section-title">What Projects Have I Built?</h1>
         <ProjectCard name="univiewdatabase" />
         <ProjectCard name="library" />
@@ -107,6 +126,7 @@ class PageContainer extends React.Component {
 //Project/repo names should be standardized more
 let myProjects = {
   univiewdatabase: {
+    screenshot: "UVDBScreenshot.png",
     name: "Uniview DataBase",
     description:
       "Uniview Database is a searchable catalog of digital assets used by the Morrison Planetarium. It scans a users local installation of Uniview 2.0 software using Python, and produces an HTML webpage. Uniview Database expedites and improves planetarium show development. It can be easily implemented by other Uniview 2.0 (Planetarium software) users. ",
@@ -116,19 +136,18 @@ let myProjects = {
     deployment: "https://kyouyatamax.github.io/UVDatabase/"
   },
   library: {
+    screenshot: "libraryscreenshot.png",
     name: "Personal Library",
     description:
       "I tried building this library in React as well as in pure Javascript. In both cases, users can see a library of books with their titles, author names, # of pages, etc. Users can add new books using the Javascript form, check off books as they’re read, and remove books from their library. ",
-    techUsed:
-      "ReactJS (JavaScript), FlexBox(CSS), Javascript ES6",
-    source: "https://github.com/kyouyatamax/jsLibraryOdinProject",
+    techUsed: "ReactJS (JavaScript), FlexBox(CSS), Javascript ES6",
+    source: "https://github.com/kyouyatamax/bookLibraryReact",
     deployment: "https://kyouyatamax.github.io/bookLibraryReact/"
   },
   formvalidation: {
     name: "Form Validation Practice",
     description: "",
-    techUsed:
-      "HTML, CSS, Javascript",
+    techUsed: "HTML, CSS, Javascript",
     source: "https://github.com/kyouyatamax/formValidationPractice",
     deployment: "https://kyouyatamax.github.io/formValidationPractice/"
   },
@@ -142,19 +161,19 @@ let myProjects = {
     deployment: "https://kyouyatamax.github.io/weather-app-hkang/"
   },
   myportfolio: {
+    screenshot: "portfolioscreenshot.png",
     name: "My Portfolio Webpage",
     description:
       "You're looking at it! My personal website uses React, Flexbox, and the source code is at the link below.",
-    techUsed:
-      "ReactJS (JavaScript), FlexBox(CSS),  HTML, CSS",
+    techUsed: "ReactJS (JavaScript), FlexBox(CSS),  HTML, CSS",
     source: "https://github.com/kyouyatamax/hkang-portfolio",
     deployment: "https://kyouyatamax.github.io/hkang-portfolio/"
   },
   restaurantpage: {
+    screenshot: "maejooscreenshot.png",
     name: "Restaurant Page",
     description: "",
-    techUsed:
-      "HTML, CSS, JavaScript",
+    techUsed: "HTML, CSS, JavaScript",
     source: "https://github.com/kyouyatamax/restaurantpageJS",
     deployment: "https://kyouyatamax.github.io/restaurantpageJS/"
   },
@@ -162,8 +181,7 @@ let myProjects = {
     name: "Planck Touch-Screen Exhibit",
     description:
       "The Planck Display was a touch-screen exhibit at the Santa Barbara Museum of Natural History (SBMNH). I built in updates (HTML, CSS, JS) to reflect new research data, improve content clarity and accessibility, and add multimedia assets (video, images, slideshows).",
-    techUsed:
-      "KRPano (Panoramic Image Viewer for HTML), Python, HTML, CSS",
+    techUsed: "KRPano (Panoramic Image Viewer for HTML), Python, HTML, CSS"
   }
 };
 ReactDOM.render(<PageContainer />, document.getElementById("root"));

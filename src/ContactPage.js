@@ -15,13 +15,13 @@ export class ContactPage extends React.Component {
           <h3>
             Github:{" "}
             <a href="https://github.com/kyouyatamax">
-              https://github.com/kyouyatamax
+              github.com/kyouyatamax
             </a>{" "}
           </h3>
           <h3>
             LinkedIn:{" "}
-            <a href="https://www.linkedin.com/in/hankangbokbok/">
-              https://www.linkedin.com/in/hankangbokbok/
+            <a href="www.linkedin.com/in/hankangbokbok/">
+              linkedin.com/in/hankangbokbok/
             </a>
           </h3>
         </section>

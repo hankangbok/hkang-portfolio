@@ -42,8 +42,8 @@ class ProjectDescription extends React.Component {
     let sourceButton;
     let deploymentButton;
     if (source) {
-      sourceButton = <a href={source}> view source</a>;
-      deploymentButton = <a href={deployment}> view deployment</a>;
+      sourceButton = <a href={source}>source</a>;
+      deploymentButton = <a href={deployment}>view deployment</a>;
     } else {
       sourceButton = (
         <p>
@@ -97,7 +97,7 @@ class Base extends React.Component {
     return (
       <div id="base">
         <div className="subpages-container-border-gradient" />
-        <h1 className="section-title">What Projects Have I Built?</h1>
+        <h1 className="section-title">Projects</h1>
         <ProjectCard name="univiewdatabase" />
         <ProjectCard name="library" />
         <ProjectCard name="weatherapp" />

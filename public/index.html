@@ -14,13 +14,14 @@
     <div id="flex-container"> 
       <header>
         <div class="header-large">
-          <img src="calmbOK.png" id="headshot" /> 
+          <polygon></polygon>
+          <img src="calmbok.png" id="headshot" /> 
           <ul id="header-nav">
-            <li><h1>Hannah Kang</h1></li>
-            <li><a href="#">Projects</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Resume</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><h1 id="title">Hannah Kang</h1></li>
+            <li><a id="ProjectPage" onclick='wipeSlate(id)'>Projects</a></li>
+            <li><a id='AboutPage' onclick='wipeSlate(id)'>About</a></li>
+            <li><a id='ResumePage' onclick='wipeSlate(id)'>Resume</a></li>
+            <li><a id='ContactPage' onclick='wipeSlate(id)'>Contact</a></li>
           </ul>
         </div>
         <div class="header-minimized">
@@ -43,6 +44,19 @@
           <li>LinkedIn</li>
         </ul>
       </footer>
+      <script>
+        import React from 'react';
+        function wipeSlate(objectTarget) {
+          var rootDiv = document.getElementById('contents');
+          while (rootDiv.firstChild) {
+            rootDiv.removeChild(rootDiv.firstChild);
+          }
+          console.log("THIS DID WORK?")
+          const newPage = React.createElement(objectTarget);
+          ReactDOM.render(newPage, document.getElementById('contents'));
 
+        }
+      </script>
+    <script src="../src/index.js"></script>
   </body>
 </html>

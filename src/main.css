@@ -1,6 +1,6 @@
 body,
 html {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Rubik, sans-serif;
   margin: 0;
   padding: 0;
 }
@@ -8,6 +8,9 @@ a:visited{
   color:rgb(0, 0, 128);
 }
  
+#title {
+  font-weight:normal;
+}
 header {
   width: 100%;
 }
@@ -18,23 +21,35 @@ header {
 /* give the source/deployment links cute shapes */
 .project-desc a {
   padding: 10px;
-  background: rgb(252, 168, 161);
+  background:#fcb1aa ;
   border-radius: 5px;
   margin: 2px;
-  color:navy;
+  color:rgb(35, 35, 46);
   text-decoration: none;
 }
 
+.project-desc p {
+  text-align: left;
+}
+
 #headshot {
-  height: 200px;
-  width:200px; 
-  padding:1em;
+  padding-top:2em;
+  height: 225px;
+  width:225px; 
 }
 .header-large {
   /* display:inline; */
-  background: rgb(252, 168, 161);
-  padding-bottom: 5px;
-  height:14;
+  background: rgb(255, 185, 178);
+  background: 
+    radial-gradient(
+      circle at top left,
+      #ffe7e5,
+      #fcb1aa 45%
+    );
+  padding-bottom: 50px;
+  color:rgb(51, 51, 56);
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%);
+
 }
 .header-minimized {
   visibility:hidden;
@@ -43,6 +58,7 @@ header {
 }
 #header-nav {
   text-decoration: none;
+  padding:0;
   list-style: none;
 }
 #header-nav h1{
@@ -57,7 +73,7 @@ footer {
   position: fixed;
   bottom:0;
   padding: 0.5em;
-  background: rgba(248,131,121,0.1);
+  background: #ffddd9;
   width:100%;
 }
 

@@ -1,5 +1,6 @@
 import React from 'react';
-
+// TODO GOAL: Add logic that wipes everything from the #root div
+// And populates with the contents of the ResumePage Component
 export class ResumePage extends React.Component {
   render() {
     return(

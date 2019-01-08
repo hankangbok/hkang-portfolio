@@ -132,8 +132,8 @@ let myProjects = {
       "Uniview Database is a searchable catalog of digital assets used by the Morrison Planetarium. It scans a users local installation of Uniview 2.0 software using Python, and produces an HTML webpage. Uniview Database expedites and improves planetarium show development. It can be easily implemented by other Uniview 2.0 (Planetarium software) users. ",
     techUsed:
       "ReactJS (JavaScript), DataTables (jQuery Plugin), mark.js (JavaScript)  |  Beautiful Soup (Python HTML Parser), unittest (Python) | FlexBox(CSS)",
-    source: "https://github.com/kyouyatamax/UVDatabase",
-    deployment: "https://kyouyatamax.github.io/UVDatabase/"
+    source: "https://github.com/hankangbok/UVDatabase",
+    deployment: "https://hankangbok.github.io/UVDatabase/"
   },
   library: {
     screenshot: "libraryscreenshot.png",
@@ -141,15 +141,15 @@ let myProjects = {
     description:
       "I tried building this library in React as well as in pure Javascript. In both cases, users can see a library of books with their titles, author names, # of pages, etc. Users can add new books using the Javascript form, check off books as they’re read, and remove books from their library. ",
     techUsed: "ReactJS (JavaScript), FlexBox(CSS), Javascript ES6",
-    source: "https://github.com/kyouyatamax/bookLibraryReact",
-    deployment: "https://kyouyatamax.github.io/bookLibraryReact/"
+    source: "https://github.com/hankangbok/bookLibraryReact",
+    deployment: "https://hankangbok.github.io/bookLibraryReact/"
   },
   formvalidation: {
     name: "Form Validation Practice",
     description: "",
     techUsed: "HTML, CSS, Javascript",
-    source: "https://github.com/kyouyatamax/formValidationPractice",
-    deployment: "https://kyouyatamax.github.io/formValidationPractice/"
+    source: "https://github.com/hankangbok/formValidationPractice",
+    deployment: "https://hankangbok.github.io/formValidationPractice/"
   },
   weatherapp: {
     name: "Weather in a Gif-y",
@@ -157,8 +157,8 @@ let myProjects = {
       "This webpage uses the Weather API to find out the weather in a users city of choice. In addition, whimsical animated GIFs matching the weather result are displayed using the GIPHY API. Whether you subscribe to the ‘Jiff’ or ‘Gif’ pronunciation, this page can help you check the weather in a GIF. ",
     techUsed:
       "Weather API (JavaScript), GIPHY API (JavaScript), ReactJS (JavaScript),  HTML, CSS, Javascript Highlight API, FlexBox(CSS), DataTables(JQuery Plugin)",
-    source: "https://github.com/kyouyatamax/weather-app-hkang",
-    deployment: "https://kyouyatamax.github.io/weather-app-hkang/"
+    source: "https://github.com/hankangbok/weather-app-hkang",
+    deployment: "https://hankangbok.github.io/weather-app-hkang/"
   },
   myportfolio: {
     screenshot: "portfolioscreenshot.png",
@@ -166,16 +166,16 @@ let myProjects = {
     description:
       "You're looking at it! My personal website uses React, Flexbox, and the source code is at the link below.",
     techUsed: "ReactJS (JavaScript), FlexBox(CSS),  HTML, CSS",
-    source: "https://github.com/kyouyatamax/hkang-portfolio",
-    deployment: "https://kyouyatamax.github.io/hkang-portfolio/"
+    source: "https://github.com/hankangbok/hkang-portfolio",
+    deployment: "https://hankangbok.github.io/hkang-portfolio/"
   },
   restaurantpage: {
     screenshot: "maejooscreenshot.png",
     name: "Restaurant Page",
     description: "",
     techUsed: "HTML, CSS, JavaScript",
-    source: "https://github.com/kyouyatamax/restaurantpageJS",
-    deployment: "https://kyouyatamax.github.io/restaurantpageJS/"
+    source: "https://github.com/hankangbok/restaurantpageJS",
+    deployment: "https://hankangbok.github.io/restaurantpageJS/"
   },
   planckdisplay: {
     name: "Planck Touch-Screen Exhibit",

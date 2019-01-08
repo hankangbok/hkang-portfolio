@@ -14,8 +14,8 @@ export class ContactPage extends React.Component {
           </h3>
           <h3>
             Github:{" "}
-            <a href="https://github.com/kyouyatamax">
-              github.com/kyouyatamax
+            <a href="https://github.com/hankangbok">
+              github.com/hankangbok
             </a>{" "}
           </h3>
           <h3>

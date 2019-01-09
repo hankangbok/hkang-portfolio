@@ -91,10 +91,10 @@ class ProjectCard extends React.Component {
   }
 }
 
-class Base extends React.Component {
+class Projects extends React.Component {
   render() {
     return (
-      <div id="base">
+      <div id="projects-page">
         <div className="subpages-container-border-gradient" />
         <h1 className="section-title">Projects</h1>
         <ProjectCard name="univiewdatabase" />
@@ -114,7 +114,7 @@ class PageContainer extends React.Component {
     return (
       <div id="contents">
         <AboutPage />
-        <Base />
+        <Projects />
         <ResumePage />
         <ContactPage />
       </div>

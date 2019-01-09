@@ -16,7 +16,6 @@ function wipeSlate(objectTarget) {
   while (rootDiv.firstChild) {
     rootDiv.removeChild(rootDiv.firstChild);
   }
-  console.log("THIS DID WORK?");
   const newPage = React.createElement(objectTarget);
   ReactDOM.render(newPage, document.getElementById("contents"));
 }

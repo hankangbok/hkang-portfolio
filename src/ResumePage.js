@@ -10,11 +10,11 @@ export class ResumePage extends React.Component {
           Yes!
           <br />
           My resume is available{" "}
-          <a href="https://drive.google.com/file/d/1uFLY0mdue-Udl6BCpJvQtiSocr_NyBZ7/view?usp=sharing">
+          <a href="https://drive.google.com/file/d/1La7wczOMwkEPR4ltYewfJi3zpHDvaZf0/view?usp=sharing">
             on Google Drive.
           </a>
         </h3>
-        <h3>Embed the pdf into the page when the user selects</h3>
+        <embed src="HannahKang_2019Resume.pdf" type="application/pdf" width='100%' height='600px'/>
       </div>
     );
   }

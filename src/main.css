@@ -179,3 +179,11 @@ footer {
   opacity: 1;
   transition:opacity 1s linear;
 }
+embed:hover{
+  height:1000px;
+  transition:height 1s;
+}
+embed:not(:hover){
+  height:600px;
+  transition: height 1s;
+}
